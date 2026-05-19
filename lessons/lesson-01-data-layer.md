@@ -1,7 +1,7 @@
 # Lesson 01 — The Data Layer: Buff the Starters
 
 **Level:** Beginner
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -149,4 +149,14 @@ noticeably stronger than vanilla.
 
 ## Completion Notes
 
-*(Record what you changed and what you observed here once done.)*
+**Learnset changes:**
+- Bulbasaur: added `MOVE_ABSORB` at level 1 (new move, not previously in learnset)
+- Charmander: moved `MOVE_EMBER` from level 7 → level 4 (not level 1, but starters battle at level 5 so the rival has it — functionally identical)
+- Squirtle: moved `MOVE_BUBBLE` from level 7 → level 4 (same reasoning as Charmander)
+
+**Stat changes (+5 to highest existing stat):**
+- Bulbasaur: SpAttack 65 → 70, SpDefense 65 → 70 (both were tied highest)
+- Charmander: Speed 65 → 70 (Speed and SpAttack were tied; Speed chosen)
+- Squirtle: Defense 65 → 70, SpDefense 64 → 70 (both near-highest, both bumped)
+
+**Lesson learned:** Ember and Bubble don't need to be at level 1 specifically — what matters is they fall at or below the rival's battle level (5). Moving to level 4 achieves the same effect. Bulbasaur's Absorb at level 1 is the cleanest approach since it's a truly new addition rather than moving an existing entry.
