@@ -1,7 +1,7 @@
 # Lesson 03 — Wild Encounters: Controlling What Lives Where
 
 **Level:** Beginner
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -160,4 +160,6 @@ that's expected.
 
 ## Completion Notes
 
-*(Record what you changed and what you observed here once done.)*
+- Added Caterpie and Weedle to slots 2–3 and 6–7 (thematic, near Viridian Forest)
+- Kept Pidgey and Rattata as dominant encounters in slots 0–1
+- Placed Pidgeotto (lv 18–20) and Raticate (lv 20–22) in rare slots 10–11 as Easter eggs
