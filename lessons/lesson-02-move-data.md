@@ -1,7 +1,7 @@
 # Lesson 02 — Move Data: What Moves Actually Are
 
 **Level:** Beginner
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -174,4 +174,6 @@ them with new numbers.**
 
 ## Completion Notes
 
-*(Record what you changed and what you observed here once done.)*
+- Absorb: power 20 → 30
+- Ember: secondaryEffectChance 10 → 30
+- Bubble: secondaryEffectChance 10 → 30
