@@ -1,7 +1,7 @@
 # Lesson 07 — Reading and Modifying C Functions: Removing the HM Lock
 
 **Level:** Intermediate
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -191,4 +191,7 @@ save editor for testing). Confirm you can now forget it from the summary screen.
 
 ## Completion Notes
 
-*(Record what you changed and what you observed here once done.)*
+- Applied Option A: collapsed `PokeSum_CanForgetSelectedMove()` to `return TRUE`
+- Tested: taught Fly to Pidgey, then overwrote it with Aerial Ace successfully — lock confirmed removed
+
+**Dive explanation:** Dive is HM08, index 7 in a 0-based array. The loop runs `i < NUM_HIDDEN_MACHINES - 1` (i.e. `i < 7`), covering indices 0–6 (HM01–HM07) and skipping index 7 (Dive). The original devs excluded it as a safety valve — there is no Dive location in FireRed/LeafGreen, so a Pokemon traded from Hoenn with Dive would otherwise be permanently locked with an unusable, unforgettable move. Making Dive forgettable was the fix.
