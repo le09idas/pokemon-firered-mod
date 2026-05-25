@@ -9,4 +9,4 @@ Curriculum for Pokemon FireRed modding, from easy to diabolical.
 | 03 | [Wild Encounters — Controlling What Lives Where](lesson-03-wild-encounters.md) | Beginner | Complete |
 | 04 | [Trainer Parties — Shaping the Difficulty Curve](lesson-04-trainer-parties.md) | Beginner → Intermediate | Complete |
 | 05 | [Evolutions — When and How Pokemon Change](lesson-05-evolutions.md) | Intermediate | Complete |
-| 06 | [Entering the Logic Layer — Type Effectiveness](lesson-06-entering-the-logic-layer.md) | Intermediate | In Progress |
+| 06 | [Entering the Logic Layer — Type Effectiveness](lesson-06-entering-the-logic-layer.md) | Intermediate | Complete |

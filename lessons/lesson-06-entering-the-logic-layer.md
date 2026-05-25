@@ -1,7 +1,7 @@
 # Lesson 06 — Entering the Logic Layer: Type Effectiveness
 
 **Level:** Intermediate
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -170,4 +170,16 @@ reverse engineering part of the lesson.
 
 ## Completion Notes
 
-*(Record what you changed and what you observed here once done.)*
+**Type matchup changes:**
+- Removed FIRE vs WATER resistance — Fire now deals full damage to Water types
+- Added FIRE vs GROUND super effective — lore: fire dries earth
+- Changed WATER vs WATER to NO_EFFECT (immune) — intentional: water added to water is just more water
+- Removed ICE vs WATER resistance — Ice now normal vs Water
+- Added ICE vs FIRE as NO_EFFECT (immune) — intentional: fire overwhelms ice, Ice attacks can't hurt Fire types
+- Added FIRE vs FLYING super effective — fire ignites birds, added post-review
+- Changed POISON vs POISON to NO_EFFECT (immune) — Poison immune to Poison, lore-solid
+
+**HM investigation findings:**
+- Key finding: `pokemon_summary_screen.c:3766` — `PokeSum_CanForgetSelectedMove()` calls `IsMoveHm(move)` and returns FALSE if true; this is the actual gate
+- Supporting: `quest_log_events.c`, `battle_script_commands.c:5210`, `item.c:67/495/508`, `load_save.c:22/224/256`
+- Note: `menu2.c:15` was grep noise — unrelated UI coordinate comment
