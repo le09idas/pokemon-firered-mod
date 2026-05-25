@@ -1,7 +1,7 @@
 # Lesson 10 — Adding a New NPC to a Map
 
 **Level:** Intermediate → Advanced
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -148,8 +148,8 @@ Open `data/maps/PalletTown/map.json`. At the end of the `object_events` array
     "local_id": "LOCALID_PALLET_KID",
     "type": "object",
     "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
-    "x": 7,
-    "y": 19,
+    "x": 6,
+    "y": 16,
     "elevation": 3,
     "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
     "movement_range_x": 1,
@@ -228,4 +228,7 @@ Load the ROM and walk to the south edge of Pallet Town. The kid should be there.
 
 ## Completion Notes
 
-_(fill in after completing the assignment)_
+- Added `LOCALID_PALLET_KID` entry to `data/maps/PalletTown/map.json` using `OBJ_EVENT_GFX_LITTLE_BOY` at x=6, y=16
+- `make` auto-regenerated `events.inc` and `map_event_ids.h` with the new LOCALID constant
+- Wrote `PalletTown_EventScript_Kid` in `scripts.inc` and `PalletTown_Text_Kid` in `text.inc`
+- Initial coordinates (x=7, y=19) placed the NPC in the pond — corrected to (x=6, y=16) which is solid ground in the open area south of the houses

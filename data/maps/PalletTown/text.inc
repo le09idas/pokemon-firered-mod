@@ -45,6 +45,14 @@ PalletTown_Text_FatManReturn::
     .string "academy where you can learn a lot!\p"
     .string "Oh boy! Simply such a hard decision!$"
 
+PalletTown_Text_Kid::
+    .string "Boy! I wish I was able to pick a\n"
+    .string "different starter than the usual\p"
+    .string "I really think that Turtwig is pretty\n"
+    .string "cool.\p"
+    .string "I also feel that Litten is also pretty\n"
+    .string "cool, too!$"
+
 PalletTown_Text_OakPokemonResearchLab::
     .string "OAK POKéMON RESEARCH LAB$"
 

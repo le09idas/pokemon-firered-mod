@@ -400,6 +400,10 @@ PalletTown_EventScript_FatManReturn::
     release
     end
 
+PalletTown_EventScript_Kid::
+    msgbox PalletTown_Text_Kid, MSGBOX_NPC
+    end
+
 PalletTown_EventScript_OaksLabSign::
 	lockall
 	famechecker FAMECHECKER_OAK, 0
