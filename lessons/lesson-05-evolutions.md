@@ -1,7 +1,7 @@
 # Lesson 05 — Evolutions: When and How Pokemon Change
 
 **Level:** Intermediate
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -138,4 +138,15 @@ the stone yet aren't stuck.
 
 ## Completion Notes
 
-*(Record what you changed and what you observed here once done.)*
+**Starter evolution levels differentiated by design:**
+- Bulbasaur: 16 → 14, Ivysaur: 32 (unchanged)
+- Charmander: 16 → 18, Charmeleon: 36 (unchanged)
+- Squirtle: 16 (unchanged), Wartortle: 36 → 38
+
+**Trade evolutions converted using OR-branching with thematic items:**
+- Kadabra: + EVO_ITEM ITEM_TWISTED_SPOON (thematic)
+- Machoke: + EVO_ITEM ITEM_BLACK_BELT (thematic)
+- Haunter: + EVO_ITEM ITEM_SPELL_TAG (solid)
+- Graveler: + EVO_ITEM ITEM_HARD_STONE (thematic — Rock type, no overlap with other evolutions)
+
+Note: EVO_TRADE kept alongside EVO_ITEM in all four entries — trade still works as fallback.
