@@ -1,7 +1,7 @@
 # Lesson 04 — Trainer Parties: Shaping the Difficulty Curve
 
 **Level:** Beginner → Intermediate
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -146,4 +146,14 @@ like it requires a strategy.
 
 ## Completion Notes
 
-*(Record what you changed and what you observed here once done.)*
+**Rival Route 22 (all three variants):**
+- IV: 50 → 65
+- Starters now carry their STAB move (Bubble / Absorb / Ember)
+- Pidgey upgraded from Tackle/Sand Attack to Tackle/Sand Attack/Gust (unprompted, good call)
+
+**Brock:**
+- IV: 0 → 40 across all three Pokemon
+- Added second Geodude (lv 13) with Self Destruct as a surprise move
+- First Geodude now uses Rollout + Rock Tomb instead of just Tackle + Defense Curl
+- Onix gets Rock Blast added alongside Rock Tomb
+- Expanded from 2 → 3 Pokemon
