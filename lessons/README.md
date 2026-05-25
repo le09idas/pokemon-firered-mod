@@ -13,3 +13,4 @@ Curriculum for Pokemon FireRed modding, from easy to diabolical.
 | 07 | [Reading and Modifying C Functions — Removing the HM Lock](lesson-07-reading-and-modifying-c-functions.md) | Intermediate | Complete |
 | 08 | [Event Scripting and Dialogue — Making the World Yours](lesson-08-event-scripting-and-dialogue.md) | Intermediate | Complete |
 | 09 | [Writing a Custom Script From Scratch](lesson-09-writing-a-custom-script.md) | Intermediate → Advanced | Complete |
+| 10 | [Adding a New NPC to a Map](lesson-10-adding-a-new-npc.md) | Intermediate → Advanced | In Progress |
