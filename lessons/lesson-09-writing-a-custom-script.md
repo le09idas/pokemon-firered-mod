@@ -1,7 +1,7 @@
 # Lesson 09 — Writing a Custom Script From Scratch
 
 **Level:** Intermediate → Advanced
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -173,4 +173,8 @@ Leave the map and come back — confirm the second state persists after map tran
 
 ## Completion Notes
 
-*(Record what you changed and what you observed here once done.)*
+- Added `.equ FLAG_MET_FAT_MAN, FLAG_0x8F7` at top of scripts.inc
+- Rewrote `PalletTown_EventScript_FatMan` with two-state branching using the permanent flag
+- `setflag` placed before `msgbox` — correct order
+- Added `PalletTown_Text_FatManReturn` to text.inc — Fat Man reflects on all Pokemon regions he's visited
+- Fixed `\l` placement: changed `\p` to `\n` on "I am at a crossroads!" so `\l` has a proper preceding newline to scroll from

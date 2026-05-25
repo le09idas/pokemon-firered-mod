@@ -26,6 +26,25 @@ PalletTown_Text_CanStoreItemsAndMonsInPC::
     .string "Wish I had such tech when\n"
     .string "I was a kid!$"
 
+PalletTown_Text_FatManReturn::
+    .string "I am at a crossroads!\n"
+    .string "I just can't decide which region\l"
+    .string "I like most.\p"
+    .string "I love my home region of Kanto.\n"
+    .string "But I can't get enough of the old\l"
+    .string "monuments in Johto.\p"
+    .string "Hoenn has beautiful waters.\n"
+    .string "Sinnoh beautiful mountains.\p"
+    .string "Unova is home to some cool\n"
+    .string "looking LEGENDARY POKéMON.\p"
+    .string "Kalos has mega evolved forms of\n"
+    .string "POKéMON a plenty and Alola I hear\l"
+    .string "is such a tropical escape.\p"
+    .string "Galar has such a noble history.\n"
+    .string "Paldea I hear has a nice POKéMON\l"
+    .string "academy where you can learn a lot!\p"
+    .string "Oh boy! Simply such a hard decision!$"
+
 PalletTown_Text_OakPokemonResearchLab::
     .string "OAK POKéMON RESEARCH LAB$"
 

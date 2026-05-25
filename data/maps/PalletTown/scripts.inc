@@ -1,4 +1,5 @@
 .equ SIGN_LADY_READY, VAR_TEMP_2
+.equ FLAG_MET_FAT_MAN, FLAG_0x8F7
 
 PalletTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PalletTown_OnTransition
@@ -387,8 +388,17 @@ PalletTown_Movement_SignLadyMoveOutOfWayLeft::
 	step_end
 
 PalletTown_EventScript_FatMan::
-	msgbox PalletTown_Text_CanStoreItemsAndMonsInPC, MSGBOX_NPC
-	end
+	lock
+    goto_if_set FLAG_MET_FAT_MAN, PalletTown_EventScript_FatManReturn
+    setflag FLAG_MET_FAT_MAN
+    msgbox PalletTown_Text_CanStoreItemsAndMonsInPC, MSGBOX_NPC
+    release
+    end
+
+PalletTown_EventScript_FatManReturn::
+    msgbox PalletTown_Text_FatManReturn, MSGBOX_NPC
+    release
+    end
 
 PalletTown_EventScript_OaksLabSign::
 	lockall
