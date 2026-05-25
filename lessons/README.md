@@ -12,3 +12,4 @@ Curriculum for Pokemon FireRed modding, from easy to diabolical.
 | 06 | [Entering the Logic Layer — Type Effectiveness](lesson-06-entering-the-logic-layer.md) | Intermediate | Complete |
 | 07 | [Reading and Modifying C Functions — Removing the HM Lock](lesson-07-reading-and-modifying-c-functions.md) | Intermediate | Complete |
 | 08 | [Event Scripting and Dialogue — Making the World Yours](lesson-08-event-scripting-and-dialogue.md) | Intermediate | Complete |
+| 09 | [Writing a Custom Script From Scratch](lesson-09-writing-a-custom-script.md) | Intermediate → Advanced | In Progress |
