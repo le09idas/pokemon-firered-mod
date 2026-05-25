@@ -1,7 +1,7 @@
 # Lesson 08 — Event Scripting and Dialogue: Making the World Yours
 
 **Level:** Intermediate
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -191,4 +191,18 @@ Walk through Pallet Town and read your new dialogue in-game.
 
 ## Completion Notes
 
-*(Record what you changed and what you observed here once done.)*
+**Task 1 — Dialogue changes:**
+- Oak's intro speech: added Lumiose lore to explain high-level Pokemon in the grass
+- Fat Man PC: added "Wish I had such tech when I was a kid!" as a third page
+- Pallet Town sign: changed to "Every journey ought to start from / humble roots!"
+- Viridian City sign: added "Bulletin! Have you seen our / Gym Leader?" as a second page
+
+**Task 2 — SignLady script analysis:**
+`PalletTown_EventScript_SignLady` handles all possible states of talking to the Sign Lady.
+- VAR = 0, FLAG_TEMP_2 unset: first interaction — she escorts the player to the sign and has them read it
+- VAR = 0, FLAG_TEMP_2 set: she's already moved out of the way and prompts you to go read it
+- VAR = 1: you just read the sign — she gives a follow-up reaction
+- VAR = 2: all done — she gives her final "raising Pokemon too" dialogue
+- Also accounts for player approaching from left or right (DIR_EAST check) determining which direction she moves out of the way
+
+**Syntax lesson learned:** `\l` after `\p` without a preceding `\n` can leave the first line blank. Use `\n` for standard 2-line boxes. `\l` is for a scrolling third line after `\n` has already been used.

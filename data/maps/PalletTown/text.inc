@@ -5,6 +5,10 @@ PalletTown_Text_OakDontGoOut::
 PalletTown_Text_OakGrassUnsafeNeedMon::
     .string "OAK: It's unsafe!\n"
     .string "Wild POKéMON live in tall grass!\p"
+    .string "Ever since that business in\n"
+    .string "Lumiose, POKéMON of higher\p"
+    .string "levels have been sighted\n"
+    .string "nearby!\p"
     .string "You need your own POKéMON for\n"
     .string "your protection.\p"
     .string "I know!\n"
@@ -18,7 +22,9 @@ PalletTown_Text_RaisingMonsToo::
 PalletTown_Text_CanStoreItemsAndMonsInPC::
     .string "Technology is incredible!\p"
     .string "You can now store and recall items\n"
-    .string "and POKéMON as data via PC.$"
+    .string "and POKéMON as data via PC.\p"
+    .string "Wish I had such tech when\n"
+    .string "I was a kid!$"
 
 PalletTown_Text_OakPokemonResearchLab::
     .string "OAK POKéMON RESEARCH LAB$"
@@ -31,7 +37,8 @@ PalletTown_Text_RivalsHouse::
 
 PalletTown_Text_TownSign::
     .string "PALLET TOWN\n"
-    .string "Shades of your journey await!$"
+    .string "Every journey ought to start from\p"
+    .string "humble roots!$"
 
 PalletTown_Text_OakLetMeSeePokedex::
     .string "OAK: Ah, {PLAYER}!\n"

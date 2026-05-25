@@ -101,7 +101,9 @@ ViridianCity_Text_TooBusyForTeachyTV::
 
 ViridianCity_Text_CitySign::
     .string "VIRIDIAN CITY \n"
-    .string "The Eternally Green Paradise$"
+    .string "The Eternally Green Paradise\p"
+    .string "Bulletin! Have you seen our\n"
+    .string "Gym Leader?$"
 
 ViridianCity_Text_CatchMonsForEasierBattles::
     .string "TRAINER TIPS\p"
