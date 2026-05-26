@@ -33,3 +33,8 @@ Route1_EventScript_Boy::
 Route1_EventScript_RouteSign::
 	msgbox Route1_Text_RouteSign, MSGBOX_SIGN
 	end
+
+Route1_EventScript_Jake::
+    trainerbattle_single TRAINER_ROUTE1_YOUNGSTER_JAKE, Route1_Text_JakeIntro, Route1_Text_JakeDefeat
+    msgbox Route1_Text_JakePostBattle, MSGBOX_AUTOCLOSE
+    end

@@ -26,3 +26,17 @@ Route1_Text_RouteSign::
     .string "ROUTE 1\n"
     .string "PALLET TOWN - VIRIDIAN CITY$"
 
+Route1_Text_JakeIntro::
+    .string "Hey! I see you picked up a starter\n"
+    .string "from PROF. OAK's lab!\p"
+    .string "Want to test it out?$"
+
+Route1_Text_JakeDefeat::
+    .string "No way… I lost!\n"
+    .string "Maybe I should get a\l"
+    .string "starter too...$"
+
+Route1_Text_JakePostBattle::
+    .string "You're really strong.\n"
+    .string "I guess starters are a big deal!$"
+

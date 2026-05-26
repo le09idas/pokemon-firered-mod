@@ -139,4 +139,12 @@ git remote set-url origin <your-github-repo-url>
 
 ---
 
+## Optional Tools
+
+See [TOOLS.md](TOOLS.md) for setup instructions for recommended tools including:
+
+- **Porymap** — visual map editor for placing NPCs and reading tile data (strongly recommended before doing any map work)
+
+---
+
 *Last updated: 2026-05-18*

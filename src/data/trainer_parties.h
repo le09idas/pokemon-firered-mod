@@ -10866,3 +10866,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_CueBallPaxton[] = {
         .species = SPECIES_MUK,
     },
 };
+
+
+static const struct TrainerMonNoItemDefaultMoves sParty_Route1YoungsterJake[] = {
+    {
+        .iv = 20,
+        .lvl = 5,
+        .species = SPECIES_RATTATA,
+    },
+};

@@ -1,7 +1,7 @@
 # Lesson 11 — Adding an Overworld Trainer
 
 **Level:** Advanced
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -244,4 +244,11 @@ by a tile.
 
 ## Completion Notes
 
-_(fill in after completing the assignment)_
+- Added `TRAINER_ROUTE1_YOUNGSTER_JAKE = 743` to `opponents.h`, bumped `NUM_TRAINERS` to 744
+- Added `sParty_Route1YoungsterJake` (Rattata lv5) to `trainer_parties.h`
+- Added trainer struct entry to `trainers.h` using `TRAINER_CLASS_YOUNGSTER`
+- Placed trainer in `Route1/map.json` at x=9, y=27 with `TRAINER_TYPE_NORMAL` and sight 4
+- Initial coordinates (x=11, y=10) landed on a ledge — corrected using Porymap to find clean walkable tile
+- Wrote `trainerbattle_single` script and three text entries in `scripts.inc` / `text.inc`
+- Trainer battles correctly: intro on sight, defeat text after win, post-battle text on re-talk
+- Installed Porymap for visual map editing going forward — see TOOLS.md
