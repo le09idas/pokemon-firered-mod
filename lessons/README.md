@@ -14,3 +14,4 @@ Curriculum for Pokemon FireRed modding, from easy to diabolical.
 | 08 | [Event Scripting and Dialogue — Making the World Yours](lesson-08-event-scripting-and-dialogue.md) | Intermediate | Complete |
 | 09 | [Writing a Custom Script From Scratch](lesson-09-writing-a-custom-script.md) | Intermediate → Advanced | Complete |
 | 10 | [Adding a New NPC to a Map](lesson-10-adding-a-new-npc.md) | Intermediate → Advanced | Complete |
+| 11 | [Adding an Overworld Trainer](lesson-11-adding-an-overworld-trainer.md) | Advanced | In Progress |
