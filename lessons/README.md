@@ -18,3 +18,4 @@ Curriculum for Pokemon FireRed modding, from easy to diabolical.
 | 12 | [Giving Items via Script](lesson-12-giving-items-via-script.md) | Advanced | Complete |
 | 13 | [Custom Shop Clerks — Building a Pokémart](lesson-13-custom-shop-clerks.md) | Advanced | Complete |
 | 14 | [Map Scripts and Cutscenes](lesson-14-map-scripts-and-cutscenes.md) | Advanced | Complete |
+| 15 | [Adding a New Map](lesson-15-adding-a-new-map.md) | Advanced → Expert | In Progress |
