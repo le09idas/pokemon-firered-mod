@@ -1,7 +1,7 @@
 # Lesson 14 — Map Scripts and Cutscenes
 
 **Level:** Advanced
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -224,4 +224,10 @@ just stand there normally.
 
 ## Completion Notes
 
-_(fill in after completing the assignment)_
+Added a one-time cutscene to Pallet Town triggered via `MAP_SCRIPT_ON_FRAME_TABLE`.
+The merchant NPC plays an exclamation mark, turns to face the player, and
+delivers a greeting line. State tracked with `VAR_SCENE_MERCHANT_ARRIVES`
+aliased to `VAR_0x409F`. `setvar` placed first in the scene script to prevent
+re-entry. Used `lockall` / `releaseall` correctly. NPC local ID aliased via
+`LOCALID_PALLET_GFX_MAN` — noted that this name is Porymap-generated from the
+sprite type and would break if the sprite is ever changed; raw value is 5.

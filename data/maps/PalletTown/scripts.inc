@@ -1,6 +1,8 @@
 .equ SIGN_LADY_READY, VAR_TEMP_2
 .equ FLAG_MET_FAT_MAN, FLAG_0x8F7
 .equ FLAG_KID_GAVE_ITEM, FLAG_0x8F8
+.equ VAR_SCENE_MERCHANT_ARRIVES, VAR_0x409F
+.equ LOCALID_PALLET_MERCHANT, LOCALID_PALLET_GFX_MAN
 
 PalletTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PalletTown_OnTransition
@@ -37,8 +39,9 @@ PalletTown_EventScript_MoveSignLadyToRouteEntrance::
 	return
 
 PalletTown_OnFrame::
-	map_script_2 VAR_MAP_SCENE_PALLET_TOWN_OAK, 2, PalletTown_EventScript_OakRatingScene
-	.2byte 0
+    map_script_2 VAR_MAP_SCENE_PALLET_TOWN_OAK, 2, PalletTown_EventScript_OakRatingScene
+    map_script_2 VAR_SCENE_MERCHANT_ARRIVES, 0, PalletTown_EventScript_MerchantArrivesScene
+    .2byte 0
 
 @ Oak approaches player after exiting their house post Elite Four to check if they should receieve the National Dex
 PalletTown_EventScript_OakRatingScene::
@@ -440,6 +443,17 @@ PalletTown_MerchantItems::
     .2byte ITEM_SUPER_POTION
     .2byte ITEM_REPEL
     .2byte ITEM_NONE
+
+PalletTown_EventScript_MerchantArrivesScene::
+    setvar VAR_SCENE_MERCHANT_ARRIVES, 1
+    lockall
+    applymovement LOCALID_PALLET_MERCHANT, Common_Movement_ExclamationMark
+    waitmovement 0
+    applymovement LOCALID_PALLET_MERCHANT, Common_Movement_FacePlayer
+    waitmovement 0
+    msgbox PalletTown_Text_MerchantArrives
+    releaseall
+    end
 
 PalletTown_EventScript_OaksLabSign::
 	lockall

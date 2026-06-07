@@ -105,3 +105,7 @@ PalletTown_Text_OakYouEnjoyingTraveling::
     .string "Good for you, good for you.\n"
     .string "Hohoho.$"
 
+PalletTown_Text_MerchantArrives::
+    .string "Hey there, traveler!\p"
+    .string "I just set up shop here.\n"
+    .string "Come check out my wares!$"

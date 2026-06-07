@@ -87,6 +87,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_PALLET_GFX_MAN",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MAN",
       "x": 11,
