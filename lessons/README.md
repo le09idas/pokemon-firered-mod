@@ -16,4 +16,4 @@ Curriculum for Pokemon FireRed modding, from easy to diabolical.
 | 10 | [Adding a New NPC to a Map](lesson-10-adding-a-new-npc.md) | Intermediate → Advanced | Complete |
 | 11 | [Adding an Overworld Trainer](lesson-11-adding-an-overworld-trainer.md) | Advanced | Complete |
 | 12 | [Giving Items via Script](lesson-12-giving-items-via-script.md) | Advanced | Complete |
-| 13 | [Custom Shop Clerks — Building a Pokémart](lesson-13-custom-shop-clerks.md) | Advanced | In Progress |
+| 13 | [Custom Shop Clerks — Building a Pokémart](lesson-13-custom-shop-clerks.md) | Advanced | Complete |

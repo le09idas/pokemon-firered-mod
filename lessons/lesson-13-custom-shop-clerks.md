@@ -1,7 +1,7 @@
 # Lesson 13 — Custom Shop Clerks: Building a Pokémart
 
 **Level:** Advanced
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -158,4 +158,10 @@ the merchant a personality. Just define it in `text.inc`.
 
 ## Completion Notes
 
-_(fill in after completing the assignment)_
+Added a traveling merchant NPC to Pallet Town (x: 11, y: 18) selling Poké
+Balls, Super Potions, and Repels. Script uses `message` + `waitmessage` before
+`pokemart` and `msgbox Text_PleaseComeAgain` after, matching the stock clerk
+pattern. Item list is `.align 2`-aligned and terminated with `ITEM_NONE`.
+One mistake to remember: the script block initially landed in `text.inc` by
+accident — script commands always go in `scripts.inc`, even though both files
+share the same assembler context and it would have compiled either way.

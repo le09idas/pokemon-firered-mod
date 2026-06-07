@@ -424,6 +424,23 @@ PalletTown_EventScript_KidAfter::
     msgbox PalletTown_Text_KidAfter, MSGBOX_NPC
     end
 
+PalletTown_EventScript_Merchant::
+    lock
+    faceplayer
+    message Text_MayIHelpYou
+    waitmessage
+    pokemart PalletTown_MerchantItems
+    msgbox Text_PleaseComeAgain
+    release
+    end
+
+    .align 2
+PalletTown_MerchantItems::
+    .2byte ITEM_POKE_BALL
+    .2byte ITEM_SUPER_POTION
+    .2byte ITEM_REPEL
+    .2byte ITEM_NONE
+
 PalletTown_EventScript_OaksLabSign::
 	lockall
 	famechecker FAMECHECKER_OAK, 0
