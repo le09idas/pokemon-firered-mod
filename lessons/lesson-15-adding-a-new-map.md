@@ -1,7 +1,7 @@
 # Lesson 15 — Adding a New Map
 
 **Level:** Advanced → Expert
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -188,4 +188,19 @@ Read the sign. Walk to the exit warp — you should warp back out to Pallet Town
 
 ## Completion Notes
 
-_(fill in after completing the assignment)_
+Created `PalletTown_MerchantHut` as a new interior map connected to Pallet
+Town. Bidirectional warp wired correctly: Pallet Town warp [3] ↔ hut warp [0].
+Sign added with `MSGBOX_SIGN`. Manually added `.include` entries to
+`event_scripts.s` in the correct scripts and text sections.
+
+Two bugs encountered and fixed:
+- **Duplicate includes**: Porymap auto-appended `.include` lines to the end of
+  `event_scripts.s` after manual lines were already added. Removed the
+  Porymap-appended duplicates. Going forward: let Porymap add them OR add them
+  manually — not both.
+- **`warp_id: "MAP_PALLET_TOWN"`**: The hut's exit warp had its local ID
+  accidentally set to the destination map's name. Porymap read that string and
+  generated a conflicting `#define MAP_PALLET_TOWN 0` in `map_event_ids.h` on
+  every save. Fixed by setting `warp_id` to `"0"` (the correct numeric index).
+  Also noted: `map_event_ids.h` is auto-generated — edits to it are overwritten
+  by Porymap; fix the source (map.json) instead.

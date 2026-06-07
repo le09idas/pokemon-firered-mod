@@ -345,6 +345,7 @@ gStdScriptsEnd::
 	.include "data/maps/PalletTown_PlayersHouse_2F/scripts.inc"
 	.include "data/maps/PalletTown_RivalsHouse/scripts.inc"
 	.include "data/maps/PalletTown_ProfessorOaksLab/scripts.inc"
+	.include "data/maps/PalletTown_MerchantHut/scripts.inc"
 	.include "data/maps/ViridianCity_House/scripts.inc"
 	.include "data/maps/ViridianCity_Gym/scripts.inc"
 	.include "data/maps/ViridianCity_School/scripts.inc"
@@ -671,6 +672,7 @@ gStdScriptsEnd::
 	.include "data/maps/PalletTown_PlayersHouse_2F/text.inc"
 	.include "data/maps/PalletTown_RivalsHouse/text.inc"
 	.include "data/maps/PalletTown_ProfessorOaksLab/text.inc"
+	.include "data/maps/PalletTown_MerchantHut/text.inc"
 	.include "data/maps/ViridianCity_House/text.inc"
 	.include "data/maps/ViridianCity_Gym/text.inc"
 	.include "data/maps/ViridianCity_School/text.inc"
@@ -1360,3 +1362,5 @@ Text_TestMsg::
 	.include "data/text/save.inc"
 	.include "data/text/new_game_intro.inc"
 	.include "data/text/pokedude.inc"
+
+

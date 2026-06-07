@@ -123,6 +123,13 @@
       "elevation": 0,
       "dest_map": "MAP_PALLET_TOWN_PROFESSOR_OAKS_LAB",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_PALLET_TOWN_MERCHANT_HUT",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
