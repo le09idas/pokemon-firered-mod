@@ -19,3 +19,4 @@ Curriculum for Pokemon FireRed modding, from easy to diabolical.
 | 13 | [Custom Shop Clerks — Building a Pokémart](lesson-13-custom-shop-clerks.md) | Advanced | Complete |
 | 14 | [Map Scripts and Cutscenes](lesson-14-map-scripts-and-cutscenes.md) | Advanced | Complete |
 | 15 | [Adding a New Map](lesson-15-adding-a-new-map.md) | Advanced → Expert | Complete |
+| 16 | [Custom NPC Sprites](lesson-16-custom-npc-sprites.md) | Expert | In Progress |
