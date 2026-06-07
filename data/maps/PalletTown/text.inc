@@ -45,13 +45,19 @@ PalletTown_Text_FatManReturn::
     .string "academy where you can learn a lot!\p"
     .string "Oh boy! Simply such a hard decision!$"
 
-PalletTown_Text_Kid::
-    .string "Boy! I wish I was able to pick a\n"
-    .string "different starter than the usual\p"
-    .string "I really think that Turtwig is pretty\n"
-    .string "cool.\p"
-    .string "I also feel that Litten is also pretty\n"
-    .string "cool, too!$"
+PalletTown_Text_KidIntro::
+    .string "Hey, you look like you're\n"
+    .string "about to go on a journey!\p"
+    .string "Take this! You'll need it\n"
+    .string "out there!$"
+
+PalletTown_Text_KidGaveItem::
+    .string "I found it near the pond.\n"
+    .string "Hope it helps!$"
+
+PalletTown_Text_KidAfter::
+    .string "Have you caught anything\n"
+    .string "good yet?$"
 
 PalletTown_Text_OakPokemonResearchLab::
     .string "OAK POKéMON RESEARCH LAB$"

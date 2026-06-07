@@ -1,7 +1,7 @@
 # Lesson 12 — Giving Items via Script
 
 **Level:** Advanced
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -181,4 +181,11 @@ BAG is full…" and not give the item or set the flag.
 
 ## Completion Notes
 
-_(fill in after completing the assignment)_
+Upgraded the Pallet Town kid from Lesson 10 to give the player a Poké Ball on
+first interaction. Defined `FLAG_KID_GAVE_ITEM` at `FLAG_0x8F8` (the slot after
+`FLAG_MET_FAT_MAN`). Rewrote the kid's script with the full item-giving
+sequence: bag-space check, fanfare, `bufferitemname`/`message`/`waitmessage`/
+`waitfanfare`, then `additem` and `setflag` after the animation completes.
+Added three text entries (`KidIntro`, `KidGaveItem`, `KidAfter`) in `text.inc`.
+Build passed cleanly. Verified the flag-ordering and bag-full bail path match
+the pattern described in the lesson.

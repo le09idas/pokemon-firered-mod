@@ -1,5 +1,6 @@
 .equ SIGN_LADY_READY, VAR_TEMP_2
 .equ FLAG_MET_FAT_MAN, FLAG_0x8F7
+.equ FLAG_KID_GAVE_ITEM, FLAG_0x8F8
 
 PalletTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PalletTown_OnTransition
@@ -401,7 +402,26 @@ PalletTown_EventScript_FatManReturn::
     end
 
 PalletTown_EventScript_Kid::
-    msgbox PalletTown_Text_Kid, MSGBOX_NPC
+    lock
+    faceplayer
+    goto_if_set FLAG_KID_GAVE_ITEM, PalletTown_EventScript_KidAfter
+    msgbox PalletTown_Text_KidIntro, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
+    checkitemspace ITEM_POKE_BALL
+    goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
+    bufferitemname STR_VAR_2, ITEM_POKE_BALL
+    playfanfare MUS_LEVEL_UP
+    message Text_ObtainedTheX
+    waitmessage
+    waitfanfare
+    additem ITEM_POKE_BALL
+    msgbox PalletTown_Text_KidGaveItem, MSGBOX_DEFAULT
+    setflag FLAG_KID_GAVE_ITEM
+    release
+    end
+
+PalletTown_EventScript_KidAfter::
+    msgbox PalletTown_Text_KidAfter, MSGBOX_NPC
     end
 
 PalletTown_EventScript_OaksLabSign::
