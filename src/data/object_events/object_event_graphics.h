@@ -102,6 +102,7 @@ const u16 gObjectEventPic_Hiker[] = INCBIN_U16("graphics/object_events/pics/peop
 const u16 gObjectEventPic_Biker[] = INCBIN_U16("graphics/object_events/pics/people/biker.4bpp");
 const u16 gObjectEventPic_GymGuy[] = INCBIN_U16("graphics/object_events/pics/people/gym_guy.4bpp");
 const u16 gObjectEventPic_Man[] = INCBIN_U16("graphics/object_events/pics/people/man.4bpp");
+const u16 gObjectEventPic_Merchant[] = INCBIN_U16("graphics/object_events/pics/people/merchant.4bpp");
 const u16 gObjectEventPic_Rocker[] = INCBIN_U16("graphics/object_events/pics/people/rocker.4bpp");
 const u16 gObjectEventPic_ProfOak[] = INCBIN_U16("graphics/object_events/pics/people/prof_oak.4bpp");
 const u16 gObjectEventPic_Blue[] = INCBIN_U16("graphics/object_events/pics/people/blue.4bpp");

@@ -157,6 +157,9 @@ $(OBJEVENTGFXDIR)/people/lt_surge.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/man.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
+$(OBJEVENTGFXDIR)/people/merchant.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
 $(OBJEVENTGFXDIR)/people/mg_deliveryman.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 

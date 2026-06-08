@@ -1,7 +1,7 @@
 # Lesson 16 — Custom NPC Sprites
 
 **Level:** Expert
-**Status:** In Progress
+**Status:** Complete
 
 ---
 
@@ -233,4 +233,10 @@ Load Pallet Town. The merchant should now use your new sprite.
 
 ## Completion Notes
 
-_(fill in after completing the assignment)_
+Merchant sprite wired up and visible in Pallet Town. Two non-obvious pitfalls encountered:
+
+1. **`spritesheet_rules.mk` requires an explicit rule** for every NPC sprite — the default `%.4bpp: %.png` rule doesn't pass `-mwidth 2 -mheight 4`, which causes gbagfx to tile the spritesheet in the wrong order and produce all-zero frames. Added the merchant entry between man and mg_deliveryman.
+
+2. **PNG palette format must be a 16-entry RGB palette with no per-entry alpha.** Saving from some editors produces a non-standard PLTE/tRNS structure that causes gbagfx to silently output transparent tiles. Fixed via pypng rewrite. A better sprite authoring workflow (tooling that guarantees the correct format) is a future lesson topic.
+
+Sprite art is a color-swapped man sprite as a placeholder — final art to be revisited in a dedicated visuals lesson.

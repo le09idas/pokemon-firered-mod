@@ -24,6 +24,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lass;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Woman1;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CrushGirl;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Man;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Merchant;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rocker;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FatMan;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Woman2;
@@ -179,6 +180,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_WOMAN_1]                  = &gObjectEventGraphicsInfo_Woman1,
     [OBJ_EVENT_GFX_CRUSH_GIRL]               = &gObjectEventGraphicsInfo_CrushGirl,
     [OBJ_EVENT_GFX_MAN]                      = &gObjectEventGraphicsInfo_Man,
+    [OBJ_EVENT_GFX_MERCHANT]                 = &gObjectEventGraphicsInfo_Merchant,
     [OBJ_EVENT_GFX_ROCKER]                   = &gObjectEventGraphicsInfo_Rocker,
     [OBJ_EVENT_GFX_FAT_MAN]                  = &gObjectEventGraphicsInfo_FatMan,
     [OBJ_EVENT_GFX_WOMAN_2]                  = &gObjectEventGraphicsInfo_Woman2,
