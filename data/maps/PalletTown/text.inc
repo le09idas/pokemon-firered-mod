@@ -109,3 +109,34 @@ PalletTown_Text_MerchantArrives::
     .string "Hey there, traveler!\p"
     .string "I just set up shop here.\n"
     .string "Come check out my wares!$"
+
+PalletTown_Text_MerchantFirstMeeting:
+    .string "Ah, a new face! Welcome.\p"
+    .string "I just set up shop here in Pallet.\n"
+    .string "Take these - on the house.$"
+
+PalletTown_Text_MerchantFirstMeetingShop:
+    .string "Come back anytime.$"
+
+PalletTown_Text_MerchantQuestOffer:
+    .string "Actually, could you help me out?\p"
+    .string "I'm running low on stock.\n"
+    .string "Bring me an Antidote and\n"
+    .string "I'll make it worth your while.$"
+
+PalletTown_Text_MerchantQuestReminder:
+    .string "Still looking for that Antidote.\n"
+    .string "You can find them at most shops.$"
+
+PalletTown_Text_MerchantQuestReward:
+    .string "An Antidote! Perfect, thank you.\p"
+    .string "Here, take these Great Balls.\n"
+    .string "Consider it a business arrangement.$"
+
+PalletTown_Text_MayIHelpYou:
+    .string "Welcome back!\n"
+    .string "What can I get you?$"
+
+PalletTown_Text_PleaseComeAgain:
+    .string "Come back anytime!\n"
+    .string "Safe travels.$"

@@ -430,10 +430,52 @@ PalletTown_EventScript_KidAfter::
 PalletTown_EventScript_Merchant::
     lock
     faceplayer
-    message Text_MayIHelpYou
-    waitmessage
+    goto_if_set FLAG_MET_MERCHANT, PalletTown_EventScript_MerchantReturningCustomer
+    @ First meeting
+    setflag FLAG_MET_MERCHANT
+    msgbox PalletTown_Text_MerchantFirstMeeting
+    giveitem ITEM_POTION, 3
+    msgbox PalletTown_Text_MerchantFirstMeetingShop
+    goto PalletTown_EventScript_MerchantOpenShop
+    end
+
+PalletTown_EventScript_MerchantReturningCustomer::
+    compare VAR_MERCHANT_QUEST, 0
+    goto_if_eq PalletTown_EventScript_MerchantQuestOffer
+    compare VAR_MERCHANT_QUEST, 1
+    goto_if_eq PalletTown_EventScript_MerchantQuestCheck
+    @ Quest complete — normal visit
+    msgbox PalletTown_Text_MayIHelpYou
+    goto PalletTown_EventScript_MerchantOpenShop
+    end
+
+PalletTown_EventScript_MerchantOpenShop::
     pokemart PalletTown_MerchantItems
-    msgbox Text_PleaseComeAgain
+    msgbox PalletTown_Text_PleaseComeAgain
+    release
+    end
+
+PalletTown_EventScript_MerchantQuestOffer::
+    @ Quest not yet started — offer it
+    msgbox PalletTown_Text_MerchantQuestOffer
+    setvar VAR_MERCHANT_QUEST, 1
+    release
+    end
+
+PalletTown_EventScript_MerchantQuestCheck::
+    @ Quest in progress — check for the item
+    checkitem ITEM_ANTIDOTE, 1
+    compare VAR_RESULT, 1
+    goto_if_eq PalletTown_EventScript_MerchantQuestComplete
+    msgbox PalletTown_Text_MerchantQuestReminder
+    release
+    end
+
+PalletTown_EventScript_MerchantQuestComplete::
+    removeitem ITEM_ANTIDOTE, 1
+    setvar VAR_MERCHANT_QUEST, 2
+    msgbox PalletTown_Text_MerchantQuestReward
+    giveitem ITEM_GREAT_BALL, 5
     release
     end
 

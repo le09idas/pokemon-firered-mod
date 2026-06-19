@@ -1283,7 +1283,7 @@
 #define FLAG_0x4DD               0x4DD
 #define FLAG_0x4DE               0x4DE
 #define FLAG_0x4DF               0x4DF
-#define FLAG_0x4E0               0x4E0
+#define FLAG_MET_MERCHANT        0x4E0
 #define FLAG_0x4E1               0x4E1
 #define FLAG_0x4E2               0x4E2
 #define FLAG_0x4E3               0x4E3

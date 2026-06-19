@@ -300,7 +300,7 @@
 #define VAR_0x40F7                 0x40F7
 #define VAR_0x40F8                 0x40F8
 #define VAR_0x40F9                 0x40F9
-#define VAR_0x40FA                 0x40FA
+#define VAR_MERCHANT_QUEST         0x40FA
 #define VAR_0x40FB                 0x40FB
 #define VAR_0x40FC                 0x40FC
 #define VAR_0x40FD                 0x40FD
